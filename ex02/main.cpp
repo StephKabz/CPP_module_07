@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kingstephane <kingstephane@student.42.f    +#+  +:+       +#+        */
+/*   By: stkabang <stkabang@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/19 15:44:16 by kingstephan       #+#    #+#             */
-/*   Updated: 2026/03/19 17:25:31 by kingstephan      ###   ########.fr       */
+/*   Updated: 2026/03/19 17:33:09 by stkabang         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,14 +33,20 @@ int main(void)
 			print_temp(copy_1[i]);
 		}
 	}
-	catch(...) {};
+	catch(std::exception &e)
+	{
+    	std::cout << e.what() << std::endl;
+	};
 
 	try
 	{
 		for (unsigned int j = 0; j < copy_2.size(); j++)
 			copy_2[j] = j * 2;
 	}
-	catch(...){};
+	catch(std::exception &e)
+	{
+    	std::cout << e.what() << std::endl;
+	};
 
 	printSeparator("Test 1.1 : int : copy asignment!");
 	
@@ -52,7 +58,10 @@ int main(void)
 		for (unsigned int k = 0; k < copy_1.size(); k++)
 			print_temp(copy_1[k]);
 	}
-	catch(...){};
+	catch(std::exception &e)
+	{
+    	std::cout << e.what() << std::endl;
+	};
 
 	printSeparator("Test 1.2 : int : empty!");
 	Array<int> empty;
