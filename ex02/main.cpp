@@ -6,11 +6,18 @@
 /*   By: stkabang <stkabang@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/19 15:44:16 by kingstephan       #+#    #+#             */
-/*   Updated: 2026/03/19 17:33:09 by stkabang         ###   ########.fr       */
+/*   Updated: 2026/03/19 18:12:37 by stkabang         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Array.hpp"
+
+template <typename T>
+
+void print_temp(T const &param)
+{
+	std::cout << param << std::endl;
+};
 
 void printSeparator(std::string title) {
     std::cout << "\n========================================" << std::endl;

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Array.hpp                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kingstephane <kingstephane@student.42.f    +#+  +:+       +#+        */
+/*   By: stkabang <stkabang@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/17 19:07:36 by kingstephan       #+#    #+#             */
-/*   Updated: 2026/03/19 16:40:04 by kingstephan      ###   ########.fr       */
+/*   Updated: 2026/03/19 18:12:04 by stkabang         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,13 +32,6 @@ class Array
 		T& operator[](const int idx);
 		const T& operator[](const int idx) const;
 		unsigned int size() const;
-};
-
-template <typename T>
-
-void print_temp(T const &param)
-{
-	std::cout << param << std::endl;
 };
 
 #include "Array.tpp"
