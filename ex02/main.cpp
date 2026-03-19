@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: stkabang <stkabang@student.42.fr>          +#+  +:+       +#+        */
+/*   By: kingstephane <kingstephane@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/19 15:44:16 by kingstephan       #+#    #+#             */
-/*   Updated: 2026/03/19 18:12:37 by stkabang         ###   ########.fr       */
+/*   Updated: 2026/03/19 18:42:03 by kingstephan      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,10 +35,7 @@ int main(void)
 	try
 	{
 		for (unsigned int i = 0; i < copy_1.size(); i++)
-		{
-			copy_1[i] = i;
 			print_temp(copy_1[i]);
-		}
 	}
 	catch(std::exception &e)
 	{

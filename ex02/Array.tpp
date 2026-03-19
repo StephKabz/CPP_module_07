@@ -6,7 +6,7 @@
 /*   By: kingstephane <kingstephane@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/17 19:15:00 by kingstephan       #+#    #+#             */
-/*   Updated: 2026/03/19 15:57:31 by kingstephan      ###   ########.fr       */
+/*   Updated: 2026/03/19 18:41:39 by kingstephan      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ template <typename T>
 
 Array<T>::Array(unsigned int n)
 {
-	array = new T[n];
+	array = new T[n]();
 	size_array = n;
 };
 
